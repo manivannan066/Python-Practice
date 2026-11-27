@@ -1,29 +1,41 @@
-# Simple Calculator Program
+PS C:\Python> git init
+Reinitialized existing Git repository in C:/Python/.git/
+PS C:\Python> git status
+On branch Python-Practice
+Your branch is up to date with 'origin/Python-Practice'.
 
-num1 = float(input("Enter the first number: "))
-num2 = float(input("Enter the second number: "))
+Changes to be committed:
 
-print("1. Addition (+)")
-#print("2. Subtraction (-)")
-#print("3. Multiplication (*)")
-#print("4. Division (/)")
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+        modified:   sample1.py
+Untracked files:
+        work.py
 
-choice = input("Select your operation (1/2/3/4): ")
+PS C:\Python> git add .
+PS C:\Python> git commit -m "work.py"             
+[Python-Practice ce41163] work.py
+ 2 files changed, 30 insertions(+), 1 deletion(-)
+ create mode 100644 work.py
+PS C:\Python> git branch -M Python-Practice
+PS C:\Python> git remote add origin https://github.com/manivannan066/Python-Practice.git
+error: remote origin already exists.
+PS C:\Python> git push -u origin Python-Practice
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Writing objects: 100% (3/3), 278 bytes | 139.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/manivannan066/Python-Practice.git
+   3c7904a..ce41163  Python-Practice -> Python-Practice
+branch 'Python-Practice' set up to track 'origin/Python-Practice'.
+PS C:\Python> git add .
+PS C:\Python> git commit -m "work.py"            
+On branch Python-Practice
+Your branch is up to date with 'origin/Python-Practice'.
 
-if choice == "1":
-    print("Addition =", num1 + num2)
-
-elif choice == "2":
-    print("Subtraction =", num1 - num2)
-
-elif choice == "3":
-    print("Multiplication =", num1 * num2)
-
-elif choice == "4":
-    if num2 != 0:
-        print("Division =", num1 / num2)
-    else:
-        print("Error: Cannot divide by zero")
-
-else:
-    print("Invalid choice")
+nothing to commit, working tree clean
+PS C:\Python> git push origin Python-Practice
+Everything up-to-date
+PS C:\Python> 
