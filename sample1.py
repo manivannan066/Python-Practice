@@ -4,9 +4,9 @@ num1 = float(input("Enter the first number: "))
 num2 = float(input("Enter the second number: "))
 
 print("1. Addition (+)")
-#print("2. Subtraction (-)")
-#print("3. Multiplication (*)")
-#print("4. Division (/)")
+print("2. Subtraction (-)")
+print("3. Multiplication (*)")
+print("4. Division (/)")
 
 choice = input("Select your operation (1/2/3/4): ")
 
